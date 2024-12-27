@@ -4,7 +4,7 @@ import { Setbg } from "./components/backgroundStore";
 import axios from "axios";
 
 const AuthLayout = () => {
-  const url = "https://api-news-dot-school.vercel.app";
+  const url = "https://api-news-dot-school-version2.vercel.app";
   const [background, setBackground] = useState(null);
 
   useEffect(() => {

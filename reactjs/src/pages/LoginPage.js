@@ -6,7 +6,7 @@ import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import Swal from "sweetalert2";
 
 const LoginPage = () => {
-  const url = "https://api-news-dot-school.vercel.app";
+  const url = "https://api-news-dot-school-version2.vercel.app";
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false); // State to toggle password visibility
