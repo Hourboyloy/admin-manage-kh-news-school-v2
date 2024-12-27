@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loader {
+  border-top-color: #3498db;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.custom-scroll::-webkit-scrollbar {
+  height: 7px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 2px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Custom scrollbar styles */
+textarea::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+textarea::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+  border-top-right-radius: 10px; /* Top-right corner radius */
+  border-bottom-right-radius: 10px; /* Bottom-right corner radius */
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #3498db; /* Thumb color */
+  border-radius: 10px; /* Rounded scrollbar thumb */
+  border: 2px solid #f1f1f1; /* Padding around scrollbar */
+}
+
+/* Hide scrollbar initially */
+textarea {
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+}
+
+textarea::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+/* Custom scroll on hover */
+textarea:hover {
+  overflow-y: auto; /* Show scrollbar on hover */
+}
+
+.prevent-scroll {
+  overflow-y: scroll; /* Always show scrollbar */
+  position: fixed; /* Prevent scrolling */
+  width: 100%; /* Prevent layout shift */
+}
+
+/* Customize scrollbar background */
+.prevent-scroll::-webkit-scrollbar {
+  width: 17px; /* Set the width of the scrollbar */
+}
+
+.prevent-scroll::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the track background color to black */
+}
+
